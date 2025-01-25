@@ -29,11 +29,15 @@ public class Player : MonoBehaviour
     // Muerte ************************************************************************************
     // Estas variables se utilizan para implementar la logica de la muerte del personaje
 
-    public bool _isDead =  false; // Estado del muerte del personaje
+    public bool _isDead = false; // Estado del muerte del personaje
+
+    // Layers ************************************************************************************
+    [SerializeField] private bool _is_OnWall_Layer;
+
 
     // Start is called before the first frame update
     void Start()
-    {        
+    {
         // Capturamos el elemento del RigidBody 2d
         _rb = GetComponent<Rigidbody2D>();
 
@@ -46,11 +50,28 @@ public class Player : MonoBehaviour
 
         // Llamamos al componente Animator
         _animator = GetComponent<Animator>();
+
+        // set val _is_OnWall_Layer en falso
+
+        _is_OnWall_Layer = false;
     }
+
+
+
 
     // Update is called once per frame
     void Update()
     {
+        PlayerMovement();
+        IsTouchingWall();
+
+        // Deja de aplicar fuerza si está tocando una pared de forma horizontal
+        if (_is_OnWall_Layer)
+        {
+            Debug.Log("hola");
+            _actualVelocity = 0; // Anula el movimiento horizontal
+        }
+
         // Jump 
         if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
         {
@@ -59,27 +80,18 @@ public class Player : MonoBehaviour
 
         }
 
-        PlayerMovement();
-
         // Animaciones del personaje 
         _animator.SetFloat("movement", _actualVelocity); // animación de movimiento
 
- 
     }
 
-    private void FixedUpdate()
-    {
-        
-    }
-
+    #region MOVIMIENTO
     // Logica de Movimiento
-
     private void PlayerMovement()
     {
-
         // Movimiento Horizontal
         float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
-        
+
         // Cambio del sprite dependiendo de la dirección
         if (_moveInput > 0)
         {
@@ -107,7 +119,9 @@ public class Player : MonoBehaviour
         _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
 
     }
+    #endregion
 
+    #region COLISIONES 2D
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // Entra en colisión con el suelo
@@ -115,7 +129,7 @@ public class Player : MonoBehaviour
         {
             _isGrounded = true;
             _animator.SetBool("isGrounded", true);
-            
+
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -134,23 +148,62 @@ public class Player : MonoBehaviour
         }
 
     }
+    #endregion
 
+    #region LOGICA DE MUERTE
     public void CharacterDeath()
     {
         // Terminar el juego
         _isDead = true;
     }
+    #endregion
 
+    #region ANIMACIONES PARTICULAS
     public void StartParticleAnim_Dust()
     {
         _particleSmokeFx.Play();
-      
+
     }
+
 
     public void StartParticleAnim_Jump()
     {
         _particleSmokeFx_Jump.Play();
     }
+    #endregion
 
+    #region LOGICA DE PAREDES
+    // Evita que se aplique una fuerza a una pared
+
+    private void IsTouchingWall()
+    {
+        /*
+
+        LayerMask _wallLayer = LayerMask.GetMask("wallLayer");
+         
+        // Dibuja los rayos en la escena para debug
+        Debug.DrawRay(transform.position, Vector2.right * 0.8f, Color.red);
+        Debug.DrawRay(transform.position, Vector2.left * 0.8f, Color.red);
+
+        RaycastHit2D hit_right = Physics2D.Raycast(transform.position, Vector2.right, 0.8f, _wallLayer); // hacia la derecha
+        RaycastHit2D hit_left = Physics2D.Raycast(transform.position, Vector2.left, 0.8f, _wallLayer); // hacia la izquierda
+
+        if (hit_left.collider != null || hit_right.collider != null)
+        {
+            if (hit_left.collider.gameObject.layer == _wallLayer ||
+                hit_right.collider.gameObject.layer == _wallLayer)
+            {
+                _is_OnWall_Layer = true;
+            }
+            else
+            {
+                _is_OnWall_Layer = false;
+            }
+        }
+  
+        */
+    }
+
+    #endregion
 
 }
