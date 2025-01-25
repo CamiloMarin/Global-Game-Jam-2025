@@ -239,7 +239,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Botones Asha-28_0: 2463268457907743822
+      Botones Asha-28_1: -3717243143603671505
+      Botones Asha-28_2: -8636779336592351748
+      Botones Asha-28_3: -2503802188290581332
+      Botones Asha-28_4: -6639241015209792509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
