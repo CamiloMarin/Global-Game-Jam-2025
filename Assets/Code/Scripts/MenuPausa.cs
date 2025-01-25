@@ -40,8 +40,7 @@ public class MenuPausa : MonoBehaviour
 
     public void Cerrar()
     {
-        Debug.Log("Cerrando juego");
-        Application.Quit();
+        menuPausa.SetActive(false);
     }
 
     public void AbrirMenuConfig()
