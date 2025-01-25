@@ -7,9 +7,14 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D _rb; // Componente del rb
     private bool _isGrounded; // bool del suelo
+
+    // Animación ********************************************************************************
     private Animator _animator;
 
-    // Velocidad ******************************************************************************
+    // Animación ********************************************************************************
+    private ParticleSystem _particleSmokeFx;
+
+    // Velocidad ********************************************************************************
     // Estas variables se utilizan para el movimiento del personaje
 
     public float _actualVelocity = 5f; // Velocidad del personaje
@@ -28,6 +33,10 @@ public class Player : MonoBehaviour
     {        
         // Capturamos el elemento del RigidBody 2d
         _rb = GetComponent<Rigidbody2D>();
+
+        // Llamamos al componente ParticleFX
+        _particleSmokeFx = GetComponentInChildren<ParticleSystem>();
+
         // Llamamos al componente Animator
         _animator = GetComponent<Animator>();
     }
@@ -39,7 +48,8 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
- 
+            StartParticleAnim_Dust();
+
         }
 
         PlayerMovement();
@@ -81,6 +91,8 @@ public class Player : MonoBehaviour
             _actualVelocity = Mathf.MoveTowards(_actualVelocity, 0, _deceleration * Time.deltaTime);
         }
 
+
+
         _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
 
     }
@@ -92,6 +104,7 @@ public class Player : MonoBehaviour
         {
             _isGrounded = true;
             _animator.SetBool("isGrounded", true);
+            
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -117,7 +130,10 @@ public class Player : MonoBehaviour
         _isDead = true;
     }
 
-
+    private void StartParticleAnim_Dust()
+    {
+        _particleSmokeFx.Play();
+    }
 
 
 }
