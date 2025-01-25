@@ -10,23 +10,17 @@ public class Manager_SceneController : MonoBehaviour
 
     void Start()
     {
-
         _playerScript = _gameObject_Player.GetComponent<Player>();
-
-      
-
     }
-
 
     // Update is called once per frame
     void Update()
     {
         if (_playerScript._isDead)
         {
-            /*StopPlayer();*/
+            StopPlayer();
             if (!_doItOnce)
             {
-
                 StartAnim_Death();
                 _doItOnce = true;
             }
@@ -44,6 +38,10 @@ public class Manager_SceneController : MonoBehaviour
     {
         _playerScript._animator.SetBool("isDeath", true);
     }
+
+    // Animación de Muerte UI
+
+    // Pasar escena iniciar canvas de muerte
 
 
 }
