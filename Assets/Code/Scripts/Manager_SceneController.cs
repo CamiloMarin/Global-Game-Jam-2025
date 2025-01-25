@@ -39,6 +39,7 @@ public class Manager_SceneController : MonoBehaviour
         _playerScript._animator.SetBool("isDeath", true);
     }
 
+
     // Animación de Muerte UI
 
     // Pasar escena iniciar canvas de muerte
