@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D _rb; // Componente del rb
+    public Rigidbody2D _rb; // Componente del rb
     private bool _isGrounded; // bool del suelo
 
     // Animación ********************************************************************************
-    private Animator _animator;
+    public Animator _animator;
 
     // Particulas ********************************************************************************
     private ParticleSystem _particleSmokeFx; // particulas de polvo al caer, y al girar el axis
@@ -73,11 +73,15 @@ public class Player : MonoBehaviour
         }
 
         // Jump 
-        if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
-        {
-            _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
-            StartParticleAnim_Jump(); // animación de polvo al caer xxxxxxxxxxxxxxxxxx
 
+        if (!_isDead)
+        {
+            if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
+                StartParticleAnim_Jump(); // animación de polvo al caer xxxxxxxxxxxxxxxxxx
+
+            }
         }
 
         // Animaciones del personaje 
@@ -89,34 +93,38 @@ public class Player : MonoBehaviour
     // Logica de Movimiento
     private void PlayerMovement()
     {
-        // Movimiento Horizontal
-        float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
-
-        // Cambio del sprite dependiendo de la dirección
-        if (_moveInput > 0)
+        if (!_isDead)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+             // Movimiento Horizontal
+                float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
 
-        }
-        else if (_moveInput < 0)
-        {
-            transform.localScale = new Vector3(-1, 1, 1);
+            // Cambio del sprite dependiendo de la dirección
+            if (_moveInput > 0)
+            {
+                transform.localScale = new Vector3(1, 1, 1);
 
-        }
+            }
+            else if (_moveInput < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
 
-        if (_moveInput != 0)
-        {
-            _actualVelocity = Mathf.MoveTowards(_actualVelocity, _moveInput * _topSpeed, _acceleration * Time.deltaTime);
+            }
 
-        }
-        else
-        {
-            _actualVelocity = Mathf.MoveTowards(_actualVelocity, 0, _deceleration * Time.deltaTime);
-        }
+            if (_moveInput != 0)
+            {
+                _actualVelocity = Mathf.MoveTowards(_actualVelocity, _moveInput * _topSpeed, _acceleration * Time.deltaTime);
+
+            }
+            else
+            {
+                _actualVelocity = Mathf.MoveTowards(_actualVelocity, 0, _deceleration * Time.deltaTime);
+            }
 
 
-
-        _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
+      
+                _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
+            }
+       
 
     }
     #endregion
