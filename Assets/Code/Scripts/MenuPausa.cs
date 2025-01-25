@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,6 +10,7 @@ public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject btnPausa;
     [SerializeField] private GameObject menuPausa;
+    [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menuConfig;
     [SerializeField] private GameObject player;
 
@@ -20,6 +22,7 @@ public class MenuPausa : MonoBehaviour
     {
         menuPausa.SetActive(false);
         menuConfig.SetActive(false);
+        menuControles.SetActive(false);
         player = GameObject.Find("Player");
         player_transform = player.GetComponent<Transform>();
         player_transform.position = posicionInicial;
@@ -30,7 +33,6 @@ public class MenuPausa : MonoBehaviour
         btnPausa.SetActive(false);
         menuPausa.SetActive(true);
         menuConfig.SetActive(false);
-
     }
 
     public void Reanudar()
@@ -61,7 +63,21 @@ public class MenuPausa : MonoBehaviour
     {
         menuPausa.SetActive(true);
         menuConfig.SetActive(false);
+        menuControles.SetActive(false);
     }
+
+    public void controles()
+    {
+        menuConfig.SetActive(false);
+        menuControles.SetActive(true);
+    }
+
+    public void VolverMenuPause()
+    {
+        menuConfig.SetActive(true);
+        menuControles.SetActive(false);
+    }
+
 
     public void Music()
     {
