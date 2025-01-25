@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // Muerte ************************************************************************************
     // Estas variables se utilizan para implementar la logica de la muerte del personaje
 
-    private bool _isDead =  false; // Estado del muerte del personaje
+    public bool _isDead =  false; // Estado del muerte del personaje
 
     // Start is called before the first frame update
     void Start()
