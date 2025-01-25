@@ -3,19 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject btnPausa;
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject menuConfig;
+    [SerializeField] private GameObject player;
 
+    private Vector3 posicionInicial;
     public AudioSource musicSource;
+    private Transform player_transform;
 
     public void Start()
     {
         menuPausa.SetActive(false);
         menuConfig.SetActive(false);
+        player = GameObject.Find("Player");
+        player_transform = player.GetComponent<Transform>();
+        player_transform.position = posicionInicial;
     }
     public void Pausa()
     {
@@ -35,6 +42,7 @@ public class MenuPausa : MonoBehaviour
     public void Reiniciar()
     {
         Time.timeScale = 1f;
+        player_transform.position = posicionInicial;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
