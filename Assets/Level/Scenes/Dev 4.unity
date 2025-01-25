@@ -5137,7 +5137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 550565678}
   - component: {fileID: 550565679}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10571,6 +10571,7 @@ MonoBehaviour:
   _topSpeed: 8
   _deceleration: 15
   _isDead: 0
+  _is_OnWall_Layer: 0
 --- !u!212 &1346710838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11028,7 +11029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2052397003}
   - component: {fileID: 2052397004}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Square
   m_TagString: Ground
   m_Icon: {fileID: 0}
