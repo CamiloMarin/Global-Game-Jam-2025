@@ -1,21 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.XR;
 
 public class MenuPausa : MonoBehaviour
 {
     [SerializeField] private GameObject btnPausa;
     [SerializeField] private GameObject menuPausa;
+    [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menuConfig;
+    [SerializeField] private GameObject player;
 
+    private Vector3 posicionInicial;
     public AudioSource musicSource;
+    private Transform player_transform;
 
     public void Start()
     {
         menuPausa.SetActive(false);
         menuConfig.SetActive(false);
+        menuControles.SetActive(false);
+        player = GameObject.Find("Player");
+        player_transform = player.GetComponent<Transform>();
+        player_transform.position = posicionInicial;
     }
     public void Pausa()
     {
@@ -23,7 +33,6 @@ public class MenuPausa : MonoBehaviour
         btnPausa.SetActive(false);
         menuPausa.SetActive(true);
         menuConfig.SetActive(false);
-
     }
 
     public void Reanudar()
@@ -35,6 +44,7 @@ public class MenuPausa : MonoBehaviour
     public void Reiniciar()
     {
         Time.timeScale = 1f;
+        player_transform.position = posicionInicial;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -53,7 +63,21 @@ public class MenuPausa : MonoBehaviour
     {
         menuPausa.SetActive(true);
         menuConfig.SetActive(false);
+        menuControles.SetActive(false);
     }
+
+    public void controles()
+    {
+        menuConfig.SetActive(false);
+        menuControles.SetActive(true);
+    }
+
+    public void VolverMenuPause()
+    {
+        menuConfig.SetActive(true);
+        menuControles.SetActive(false);
+    }
+
 
     public void Music()
     {
