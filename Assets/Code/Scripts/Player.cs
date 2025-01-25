@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D _rb; // Componente del rb
     private bool _isGrounded; // bool del suelo
+    private Animator _animator;
 
     // Velocidad ******************************************************************************
     // Estas variables se utilizan para el movimiento del personaje
@@ -27,6 +28,8 @@ public class Player : MonoBehaviour
     {        
         // Capturamos el elemento del RigidBody 2d
         _rb = GetComponent<Rigidbody2D>();
+        // Llamamos al componente Animator
+        _animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,9 +39,13 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W) && _isGrounded)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _jumpForce);
+ 
         }
 
         PlayerMovement();
+
+        // Animaciones del personaje 
+        _animator.SetFloat("movement", _actualVelocity);
 
     }
 
@@ -84,6 +91,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             _isGrounded = true;
+            _animator.SetBool("isGrounded", true);
         }
 
         if (collision.gameObject.CompareTag("Enemy"))
@@ -98,6 +106,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             _isGrounded = false;
+            _animator.SetBool("isGrounded", false);
         }
 
     }
@@ -106,9 +115,9 @@ public class Player : MonoBehaviour
     {
         // Terminar el juego
         _isDead = true;
-
-
     }
+
+
 
 
 }

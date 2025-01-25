@@ -58,7 +58,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -311,7 +311,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pink_Monster_Jump_8_0: 2283286509472130540
+      Pink_Monster_Jump_8_1: 6556944997375165909
+      Pink_Monster_Jump_8_2: -3992844248288220073
+      Pink_Monster_Jump_8_3: -6125399602190560530
+      Pink_Monster_Jump_8_4: -2939628711568879435
+      Pink_Monster_Jump_8_5: -4875272673939935668
+      Pink_Monster_Jump_8_6: -3960816354698005906
+      Pink_Monster_Jump_8_7: 8657712412600128567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
