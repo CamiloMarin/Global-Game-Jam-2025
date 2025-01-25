@@ -9,7 +9,7 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private GameObject btnPausa;
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject menuConfig;
-
+    
     public AudioSource musicSource;
 
     public void Start()
@@ -62,7 +62,7 @@ public class MenuPausa : MonoBehaviour
             musicSource.Play();
         }
         else
-        {
+    {
             musicSource.Play();
         }
     }
