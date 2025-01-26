@@ -12,7 +12,7 @@ public class ChangeScene : MonoBehaviour
 
     public void ExitMenu()
     {
-        SceneManager.LoadSceneAsync(2);
+        SceneManager.LoadSceneAsync(0);
     }
     
     public void QuitGame()

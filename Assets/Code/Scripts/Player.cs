@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
     public bool _isDead = false; // Estado del muerte del personaje
 
     // Layers ************************************************************************************
+    [SerializeField] private LayerMask _wallLayer;
     [SerializeField] private bool _is_OnWall_Layer;
 
 
@@ -63,15 +65,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerMovement();
-        IsTouchingWall();
-
-        // Deja de aplicar fuerza si está tocando una pared de forma horizontal
-        if (_is_OnWall_Layer)
-        {
-            Debug.Log("hola");
-            _actualVelocity = 0; // Anula el movimiento horizontal
-        }
-
+   
         // Jump 
 
         if (!_isDead)
@@ -95,8 +89,8 @@ public class Player : MonoBehaviour
     {
         if (!_isDead)
         {
-             // Movimiento Horizontal
-                float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
+            // Movimiento Horizontal
+               float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
 
             // Cambio del sprite dependiendo de la dirección
             if (_moveInput > 0)
@@ -180,38 +174,6 @@ public class Player : MonoBehaviour
     }
     #endregion
 
-    #region LOGICA DE PAREDES
-    // Evita que se aplique una fuerza a una pared
-
-    private void IsTouchingWall()
-    {
-        /*
-
-        LayerMask _wallLayer = LayerMask.GetMask("wallLayer");
-         
-        // Dibuja los rayos en la escena para debug
-        Debug.DrawRay(transform.position, Vector2.right * 0.8f, Color.red);
-        Debug.DrawRay(transform.position, Vector2.left * 0.8f, Color.red);
-
-        RaycastHit2D hit_right = Physics2D.Raycast(transform.position, Vector2.right, 0.8f, _wallLayer); // hacia la derecha
-        RaycastHit2D hit_left = Physics2D.Raycast(transform.position, Vector2.left, 0.8f, _wallLayer); // hacia la izquierda
-
-        if (hit_left.collider != null || hit_right.collider != null)
-        {
-            if (hit_left.collider.gameObject.layer == _wallLayer ||
-                hit_right.collider.gameObject.layer == _wallLayer)
-            {
-                _is_OnWall_Layer = true;
-            }
-            else
-            {
-                _is_OnWall_Layer = false;
-            }
-        }
-  
-        */
-    }
-
-    #endregion
+    
 
 }
