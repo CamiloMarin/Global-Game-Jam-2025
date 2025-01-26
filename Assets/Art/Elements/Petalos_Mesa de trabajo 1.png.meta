@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 <<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 guid: 0d8a3e808ff726342b192c3b1260078a
 TextureImporter:
@@ -14,6 +15,14 @@ TextureImporter:
       213: 8363377902763408906
     second: piso_2_0
 >>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
+=======
+guid: 8b76c2528504c514d94b02dafac3fd6e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8516505167685582605
+    second: Petalos_Mesa de trabajo 1_0
+>>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 360
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,6 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<< HEAD:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 <<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       name: Petalos_new (3)_0
       rect:
@@ -139,6 +149,15 @@ TextureImporter:
         width: 3840
         height: 128
 >>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
+=======
+      name: Petalos_Mesa de trabajo 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 250
+        height: 250
+>>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,6 +165,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<< HEAD:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 <<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       spriteID: 039c02f9b9c08d3c0800000000000000
       internalID: -4334700778814912208
@@ -153,6 +173,10 @@ TextureImporter:
       spriteID: a0e709834efa01470800000000000000
       internalID: 8363377902763408906
 >>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
+=======
+      spriteID: 3f082502cab4fc980800000000000000
+      internalID: -8516505167685582605
+>>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1.png.meta
       vertices: []
       indices: 
       edges: []
@@ -168,11 +192,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 <<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       Petalos_new (3)_0: -4334700778814912208
 ========
       piso_2_0: 8363377902763408906
 >>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
+=======
+      Petalos_Mesa de trabajo 1_0: -8516505167685582605
+>>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
