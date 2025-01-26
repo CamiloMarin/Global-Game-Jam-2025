@@ -1,10 +1,19 @@
 fileFormatVersion: 2
+<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
 guid: 0d8a3e808ff726342b192c3b1260078a
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -4334700778814912208
     second: Petalos_new (3)_0
+========
+guid: 0340d8f61a602904e9f4601917174077
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8363377902763408906
+    second: piso_2_0
+>>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -113,6 +122,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       name: Petalos_new (3)_0
       rect:
         serializedVersion: 2
@@ -120,6 +130,15 @@ TextureImporter:
         y: 1
         width: 247
         height: 247
+========
+      name: piso_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3840
+        height: 128
+>>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +146,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
+<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       spriteID: 039c02f9b9c08d3c0800000000000000
       internalID: -4334700778814912208
+========
+      spriteID: a0e709834efa01470800000000000000
+      internalID: 8363377902763408906
+>>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
       vertices: []
       indices: 
       edges: []
@@ -144,7 +168,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (3).png.meta
       Petalos_new (3)_0: -4334700778814912208
+========
+      piso_2_0: 8363377902763408906
+>>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
