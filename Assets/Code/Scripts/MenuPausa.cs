@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditor.Timeline;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class MenuPausa : MonoBehaviour
     [SerializeField] private GameObject menuPausa;
     [SerializeField] private GameObject menuControles;
     [SerializeField] private GameObject menuConfig;
+    [SerializeField] private GameObject menuMaury;
     [SerializeField] private GameObject player;
 
     private Vector3 posicionInicial;
@@ -27,6 +29,20 @@ public class MenuPausa : MonoBehaviour
         player_transform = player.GetComponent<Transform>();
         player_transform.position = posicionInicial;
     }
+
+    public void NuevoJuego()
+    {
+        Time.timeScale = 1f;
+
+        btnPausa.SetActive(true);
+        menuPausa.SetActive(false);
+        menuConfig.SetActive(false);
+        menuControles.SetActive(false);
+        menuMaury.SetActive(false);
+
+        SceneManager.LoadScene("Dev 3");
+    }
+
     public void Pausa()
     {
         Time.timeScale = 0f;
@@ -56,6 +72,11 @@ public class MenuPausa : MonoBehaviour
     public void AbrirMenuConfig()
     {
         menuPausa.SetActive(false);
+        menuConfig.SetActive(true);
+    }
+
+    public void MenuConfigMaury()
+    {
         menuConfig.SetActive(true);
     }
 
@@ -91,8 +112,14 @@ public class MenuPausa : MonoBehaviour
         }
     }
 
-    public void Musica()
+    public void cerrar()
     {
-        Time.timeScale = 0f;
+
+    }
+
+    public void irMenuPrincipalMaury()
+    {
+        menuPausa.SetActive(false);
+        menuMaury.SetActive(true);
     }
 }
