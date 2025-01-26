@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "parte mitad larga 2 muro obst\xE1culo__0": -1664693583263605642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

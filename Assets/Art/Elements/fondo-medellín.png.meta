@@ -143,7 +143,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "fondo-medell\xEDn_0": 641713267426064392
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
