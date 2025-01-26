@@ -31,10 +31,9 @@ public class Player : MonoBehaviour
     // Estas variables se utilizan para implementar la logica de la muerte del personaje
 
     public bool _isDead = false; // Estado del muerte del personaje
+    private bool _isDead_controller = false;
 
-    // Layers ************************************************************************************
-    [SerializeField] private LayerMask _wallLayer;
-    [SerializeField] private bool _is_OnWall_Layer;
+    [SerializeField] private GameObject _bola;
 
 
     // Start is called before the first frame update
@@ -53,9 +52,7 @@ public class Player : MonoBehaviour
         // Llamamos al componente Animator
         _animator = GetComponent<Animator>();
 
-        // set val _is_OnWall_Layer en falso
-
-        _is_OnWall_Layer = false;
+       
     }
 
     void FixedUpdate()
@@ -67,6 +64,13 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+        if (_isDead && _isDead_controller == false)
+        {
+            //Empieza corrrutina
+            StartCoroutine("Anim_Muerte");
+
+        }
 
         // Jump 
 
@@ -160,6 +164,7 @@ public class Player : MonoBehaviour
     {
         // Terminar el juego
         _isDead = true;
+
     }
     #endregion
 
@@ -177,6 +182,14 @@ public class Player : MonoBehaviour
     }
     #endregion
 
-    
+    IEnumerator Anim_Muerte()
+    {
 
+        // apagamos la bola del personaje
+        _bola.SetActive(false);
+
+        _animator.SetBool("isDeath", true);
+
+        yield return new WaitForSeconds(2f);
+    }
 }
