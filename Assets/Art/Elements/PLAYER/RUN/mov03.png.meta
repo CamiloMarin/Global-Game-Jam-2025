@@ -1,28 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-<<<<<<<< Updated upstream:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-guid: c6f99db4f709a134ba095bf6a1992820
+guid: 114fdd03b807e454ca8d7d46ba8e1d5c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4723107735738678597
-    second: Idle_0
-========
-guid: 5669791518384a04581ba43d4793ab53
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -4628534887308379415
-    second: piso_ 3_0
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_ 3.png.meta
-=======
-guid: 337f2a54097bd9e419910d17c084154f
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -6003387276424471027
-    second: Petalos_Mesa de trabajo 1 copia 2_0
->>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1 copia 2.png.meta
+      213: 3260405187877742770
+    second: mov03_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,52 +113,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< HEAD:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-<<<<<<<< Updated upstream:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-      name: Idle_0
+      name: mov03_0
       rect:
         serializedVersion: 2
-        x: 1434
-        y: 352
-        width: 706
+        x: 1296
+        y: 410
+        width: 995
         height: 1928
-========
-      name: piso_ 3_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 3840
-        height: 128
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_ 3.png.meta
-=======
-      name: Petalos_Mesa de trabajo 1 copia 2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 250
-        height: 250
->>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1 copia 2.png.meta
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<< HEAD:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-<<<<<<<< Updated upstream:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-      spriteID: 54d7a982679db8140800000000000000
-      internalID: 4723107735738678597
-========
-      spriteID: 9ea3b730b0424cfb0800000000000000
-      internalID: -4628534887308379415
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_ 3.png.meta
-=======
-      spriteID: d0e9e93541fafaca0800000000000000
-      internalID: -6003387276424471027
->>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1 copia 2.png.meta
+      spriteID: 2b82b477e394f3d20800000000000000
+      internalID: 3260405187877742770
       vertices: []
       indices: 
       edges: []
@@ -184,7 +136,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 09d04e834d6bb1a4caf04649f37ebc15
     internalID: 0
     vertices: []
     indices: 
@@ -192,15 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< HEAD:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-<<<<<<<< Updated upstream:Assets/Art/Elements/PLAYER/IDLE/Idle.png.meta
-      Idle_0: 4723107735738678597
-========
-      piso_ 3_0: -4628534887308379415
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_ 3.png.meta
-=======
-      Petalos_Mesa de trabajo 1 copia 2_0: -6003387276424471027
->>>>>>> parent of 3e8f16b (Cambios Generales al Main):Assets/Art/Elements/Petalos_Mesa de trabajo 1 copia 2.png.meta
+      mov03_0: 3260405187877742770
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
