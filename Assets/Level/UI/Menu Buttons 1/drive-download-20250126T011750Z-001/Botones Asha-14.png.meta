@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e589fcc8228d89479ab4d53756e007d
+guid: 114530d90711f7847a444ca174095276
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3101105914864794996
-    second: piso_0
+      213: -4035695527474861883
+    second: Botones Asha-14_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piso_0
+      name: Botones Asha-14_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 128
+        width: 600
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c820f9dc998a6f4d0800000000000000
-      internalID: -3101105914864794996
+      spriteID: 5c86a3fbc445ef7c0800000000000000
+      internalID: -4035695527474861883
       vertices: []
       indices: 
       edges: []
@@ -144,7 +144,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      piso_0: -3101105914864794996
+      Botones Asha-14_0: -4035695527474861883
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

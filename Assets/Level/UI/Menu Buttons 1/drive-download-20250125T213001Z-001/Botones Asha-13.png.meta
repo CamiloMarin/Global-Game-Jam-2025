@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 4e589fcc8228d89479ab4d53756e007d
+guid: 8adf58766eade804a96d30b1507cc616
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3101105914864794996
-    second: piso_0
+      213: 3572115766434806477
+    second: Botones Asha-13_0
+  - first:
+      213: 8711168173071856673
+    second: Botones Asha-13_1
+  - first:
+      213: 977826964572393987
+    second: Botones Asha-13_2
+  - first:
+      213: -2941534616709380070
+    second: Botones Asha-13_3
+  - first:
+      213: 2072619829343139722
+    second: Botones Asha-13_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: piso_0
+      name: Botones Asha-13_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 128
+        x: 233
+        y: 69
+        width: 33
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +139,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c820f9dc998a6f4d0800000000000000
-      internalID: -3101105914864794996
+      spriteID: dca3bea1d54b29130800000000000000
+      internalID: 3572115766434806477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones Asha-13_1
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 69
+        width: 26
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 124f2a6bc4944e870800000000000000
+      internalID: 8711168173071856673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones Asha-13_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 70
+        width: 18
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 302d22b8170f19d00800000000000000
+      internalID: 977826964572393987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones Asha-13_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 70
+        width: 19
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a18c58cd9d19d27d0800000000000000
+      internalID: -2941534616709380070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Botones Asha-13_4
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 70
+        width: 21
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87bd6ae0cc63cc10800000000000000
+      internalID: 2072619829343139722
       vertices: []
       indices: 
       edges: []
@@ -144,7 +240,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      piso_0: -3101105914864794996
+      Botones Asha-13_0: 3572115766434806477
+      Botones Asha-13_1: 8711168173071856673
+      Botones Asha-13_2: 977826964572393987
+      Botones Asha-13_3: -2941534616709380070
+      Botones Asha-13_4: 2072619829343139722
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
