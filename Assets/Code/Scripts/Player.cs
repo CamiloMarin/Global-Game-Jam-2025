@@ -58,14 +58,16 @@ public class Player : MonoBehaviour
         _is_OnWall_Layer = false;
     }
 
-
+    void FixedUpdate()
+    {
+        PlayerMovement();
+    }
 
 
     // Update is called once per frame
     void Update()
     {
-        PlayerMovement();
-   
+
         // Jump 
 
         if (!_isDead)
@@ -90,7 +92,7 @@ public class Player : MonoBehaviour
         if (!_isDead)
         {
             // Movimiento Horizontal
-               float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
+            float _moveInput = Input.GetAxis("Horizontal"); // Las flechas de A/D & Las Flechas Left/Right 
 
             // Cambio del sprite dependiendo de la dirección
             if (_moveInput > 0)
@@ -115,16 +117,17 @@ public class Player : MonoBehaviour
             }
 
 
-      
-                _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
-            }
-       
+
+            _rb.velocity = new Vector2(_actualVelocity, _rb.velocity.y);
+        }
+
 
     }
     #endregion
 
     #region COLISIONES 2D
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnCollisionStay2D(Collision2D collision)
     {
         // Entra en colisión con el suelo
         if (collision.gameObject.CompareTag("Ground"))

@@ -1,25 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-=======
-<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (2).png.meta
 guid: c1fa0b03bfbd2374e9ee7a1bb2fc29a2
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -2382311946826540979
-    second: Petalos_new (2)_0
-========
->>>>>>> Stashed changes
-guid: 0340d8f61a602904e9f4601917174077
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8363377902763408906
-    second: piso_2_0
-<<<<<<< Updated upstream
-=======
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
->>>>>>> Stashed changes
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +39,7 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -66,11 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-<<<<<<< Updated upstream
   spritePixelsToUnits: 100
-=======
-  spritePixelsToUnits: 360
->>>>>>> Stashed changes
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -85,16 +63,16 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -107,7 +85,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,7 +98,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -132,18 +110,6 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<< Updated upstream
-=======
-<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (2).png.meta
-      name: Petalos_new (2)_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 247
-        height: 247
-========
->>>>>>> Stashed changes
       name: piso_2_0
       rect:
         serializedVersion: 2
@@ -151,29 +117,15 @@ TextureImporter:
         y: 0
         width: 3840
         height: 128
-<<<<<<< Updated upstream
-=======
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
->>>>>>> Stashed changes
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: a0e709834efa01470800000000000000
-      internalID: 8363377902763408906
-=======
-<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (2).png.meta
-      spriteID: d481c3908e350fed0800000000000000
-      internalID: -2382311946826540979
-========
-      spriteID: a0e709834efa01470800000000000000
-      internalID: 8363377902763408906
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
->>>>>>> Stashed changes
+      spriteID: d6e02160c6fe33c48ab90e9cb5a1e02d
+      internalID: -1824152914
       vertices: []
       indices: 
       edges: []
@@ -181,7 +133,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0ea3c5de9ee154548b64288c06ee46b1
     internalID: 0
     vertices: []
     indices: 
@@ -189,19 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream:Assets/Art/Elements/Petalos_Mesa de trabajo 1 copia.png.meta
-      Petalos_Mesa de trabajo 1 copia_0: 66457360246138279
-=======
-      piso_2_0: 8363377902763408906
->>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
-=======
-<<<<<<<< Updated upstream:Assets/Art/Elements/Petalos cabeza/Petalos_new (2).png.meta
-      Petalos_new (2)_0: -2382311946826540979
-========
-      piso_2_0: 8363377902763408906
->>>>>>>> Stashed changes:Assets/Art/Elements/Floor/piso_2.png.meta
->>>>>>> Stashed changes
+      piso_2_0: -1824152914
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
