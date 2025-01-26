@@ -59,7 +59,7 @@ public class MenuPausa : MonoBehaviour
         menuConfig.SetActive(true);
     }
 
-    public void backMenuPause()
+    public void backMenuPauseDeConfig()
     {
         menuPausa.SetActive(true);
         menuConfig.SetActive(false);

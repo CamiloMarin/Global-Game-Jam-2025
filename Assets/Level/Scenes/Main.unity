@@ -5711,7 +5711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: AbrirMenuConfig
         m_Mode: 1
@@ -5844,7 +5844,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 1738185776}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: Pausa
         m_Mode: 1
@@ -6341,7 +6341,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: VolverMenuPrincipal
         m_Mode: 1
@@ -6998,8 +6998,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1336472691}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7074,7 +7074,7 @@ RectTransform:
   m_Father: {fileID: 1787740692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7559,7 +7559,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: VolverMenuPause
         m_Mode: 1
@@ -8081,7 +8081,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: backMenuPause
         m_Mode: 1
@@ -8675,7 +8675,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: Reanudar
         m_Mode: 1
@@ -9425,7 +9425,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: Reiniciar
         m_Mode: 1
@@ -9822,7 +9822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1738185775}
-  - component: {fileID: 1738185774}
+  - component: {fileID: 1738185776}
   m_Layer: 0
   m_Name: Canvases
   m_TagString: Untagged
@@ -9830,24 +9830,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1738185774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1738185773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf6ee38aa183a9f41b028cab1041cc35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btnPausa: {fileID: 1386356091}
-  menuPausa: {fileID: 1220417240}
-  menuControles: {fileID: 1071166187}
-  menuConfig: {fileID: 1924316345}
-  player: {fileID: 0}
-  musicSource: {fileID: 0}
 --- !u!4 &1738185775
 Transform:
   m_ObjectHideFlags: 0
@@ -9868,6 +9850,24 @@ Transform:
   - {fileID: 1071166191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1738185776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738185773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0cdeef1827defd4ba3305e9b34cf3d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnPausa: {fileID: 1386356091}
+  menuPausa: {fileID: 117795804}
+  menuControles: {fileID: 1071166187}
+  menuConfig: {fileID: 1924316345}
+  player: {fileID: 0}
+  musicSource: {fileID: 1752193744}
 --- !u!1 &1740078051
 GameObject:
   m_ObjectHideFlags: 0
@@ -10742,7 +10742,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1738185774}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: MenuPausa, Assembly-CSharp
         m_MethodName: controles
         m_Mode: 1
@@ -15642,7 +15642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1924316346
 MonoBehaviour:
   m_ObjectHideFlags: 0
