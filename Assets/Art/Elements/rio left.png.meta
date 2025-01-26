@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f8656bff579327459b6f1d0e5d784e7
+guid: 2f8adfdcc9a94c240a2e6c8f5dc5f4b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 641713267426064392
-    second: "fondo-medell\xEDn_0"
+      213: 3061113599923741588
+    second: rio left_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "fondo-medell\xEDn_0"
+      name: rio left_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1920
-        height: 1080
+        width: 1706
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 808f59811d2d7e800800000000000000
-      internalID: 641713267426064392
+      spriteID: 4936294c9924b7a20800000000000000
+      internalID: 3061113599923741588
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      "fondo-medell\xEDn_0": 641713267426064392
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
